@@ -2,9 +2,9 @@ namespace Varios.IBolillero;
 
 public class Azar
 {
-    public int SacarBolilla(List<int>Bolillas)
+    public int SacarBolilla(Bolillero bolillero)
     {
-        Random random= new Random();
-        return random.Next(Bolillas.Count);
+        Random random= new (DateTime.Now.Millisecond);
+        return random.Next(bolillero.bolillas.Count);
     }
 }
