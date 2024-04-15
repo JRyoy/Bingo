@@ -3,5 +3,5 @@ namespace Varios.IBolillero;
 
 public class Primero : Iazar
 {
-    public int SacarBolilla(Bolillero bolillero)=> bolillero.bolillas[0];
+    public int ObtenerIndice(Bolillero bolillero)=> bolillero.bolillas[0];
 }

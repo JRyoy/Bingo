@@ -2,5 +2,5 @@ namespace Varios;
 
 public interface Iazar
 {
-    int SacarBolilla(Bolillero bolillero);
+    int ObtenerIndice(Bolillero bolillero);
 }
