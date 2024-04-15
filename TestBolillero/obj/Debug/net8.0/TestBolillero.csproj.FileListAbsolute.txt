@@ -1,0 +1,7 @@
+c:\Users\Josbert\Desktop\Bingo\TestBolillero\bin\Debug\net8.0\CoverletSourceRootsMapping_TestBolillero
+c:\Users\Josbert\Desktop\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.csproj.AssemblyReference.cache
+c:\Users\Josbert\Desktop\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Josbert\Desktop\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.AssemblyInfoInputs.cache
+c:\Users\Josbert\Desktop\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.AssemblyInfo.cs
+c:\Users\Josbert\Desktop\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.csproj.CoreCompileInputs.cache
+c:\Users\Josbert\Desktop\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.sourcelink.json

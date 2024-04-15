@@ -3,12 +3,14 @@ namespace Varios;
 public class Bolillero
 {
     public  List<int>bolillas { get; set; }
+    public  List<int>Copiabolillas { get; set; }
+
     public int CantidadBolillas { get; set; }
     public Iazar iazar{ get; set; }
     public Bolillero(int CantidadBolillas)
     {
         bolillas = new List<int>();
-        for (int i = 0;i < CantidadBolillas;i++) { bolillas.Add(i);}
+        for (int i = 0;i < CantidadBolillas;i++) { bolillas.Add(i); Copiabolillas.Add(i);}
     }
     public int SacarBolilla()
     {
@@ -34,4 +36,9 @@ public class Bolillero
         {   Jugada(bolillas); Aciertos+=1;}
         return Aciertos;
     }
+    public void Restablecer()
+    {
+        Copiabolillas.AddRange(bolillas);
+    }
+    
 }
