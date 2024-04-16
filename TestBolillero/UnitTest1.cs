@@ -7,12 +7,8 @@ namespace TestBolillero;
 
 public class UnitTest1
 {
-        public UnitTest1(Bolillero bolillero) 
-        {
-            this.bolillero = bolillero;
-   
-        }
-            public Bolillero bolillero { get; set; }
+    public Bolillero bolillero { get; set; }
+
     public UnitTest1() => bolillero = new Bolillero(10);
     [Fact]
     public void TestBoli()
@@ -36,7 +32,20 @@ public class UnitTest1
     [Fact]
     public void TestJugarGana()
     {
+        bool resultado = bolillero.Jugada([0, 1, 2, 3]);
+        Assert.True(resultado);
+    }
+    [Fact]
+    public void JugarPierde()
+    {
+        bool perdiste = bolillero.Jugada([4, 2, 1]);
+        Assert.False(perdiste);
+    }
 
+    [Fact]
+    public void GanarNVeces()
+    {
+        Equals(2, bolillero.JugadaNV(2, [0, 1, 2]));
     }
 
 }

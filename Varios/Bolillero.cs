@@ -27,7 +27,7 @@ public class Bolillero
         }
         return true;
     }
-    public int JugadaNV(List<int> bolillas, int CantidadJugada)
+    public int JugadaNV(int CantidadJugada, List<int> bolillas)
     {
         int Aciertos = 0;
         for (int i = 0; i < CantidadJugada; i++)
@@ -39,5 +39,4 @@ public class Bolillero
         bolillas.AddRange(Acertadas);
         Acertadas.Clear();
     }
-
 }
