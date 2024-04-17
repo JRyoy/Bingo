@@ -10,6 +10,13 @@ public class Bolillero
         bolillas = new List<int>();
         for (int i = 0; i < CantidadBolillas; i++) { bolillas.Add(i); }
     }
+    //Para clonar
+    private Bolillero(Bolillero original)
+    {
+        this.Acertadas = new(original.Acertadas);
+        this.bolillas=new(original.bolillas);
+
+    }
     public int SacarBolilla()
     {
         var index = iazar.ObtenerIndice(this);
@@ -39,4 +46,6 @@ public class Bolillero
         bolillas.AddRange(Acertadas);
         Acertadas.Clear();
     }
+
+
 }
