@@ -34,9 +34,9 @@ public class Bolillero
         }
         return true;
     }
-    public int JugadaNV(int CantidadJugada, List<int> bolillas)
+    public long JugadaNV(int CantidadJugada, List<int> bolillas)
     {
-        int Aciertos = 0;
+        long Aciertos = 0;
         for (int i = 0; i < CantidadJugada; i++)
         { Jugada(bolillas); Aciertos += 1; }
         return Aciertos;
