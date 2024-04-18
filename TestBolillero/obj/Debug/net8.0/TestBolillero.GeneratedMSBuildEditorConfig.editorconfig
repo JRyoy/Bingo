@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestBolillero
-build_property.ProjectDir = c:\Users\Lab15-PC01\Downloads\Bingo\TestBolillero\
+build_property.ProjectDir = /mnt/Datos/Repos/Bingo/TestBolillero/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
