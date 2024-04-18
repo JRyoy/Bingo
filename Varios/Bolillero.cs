@@ -11,11 +11,11 @@ public class Bolillero
         for (int i = 0; i < CantidadBolillas; i++) { bolillas.Add(i); }
     }
     //Para clonar
-    private Bolillero(Bolillero original)
+    public Bolillero Clon(Bolillero original)
     {
         this.Acertadas = new(original.Acertadas);
         this.bolillas=new(original.bolillas);
-
+        return original;
     }
     public int SacarBolilla()
     {
@@ -46,6 +46,4 @@ public class Bolillero
         bolillas.AddRange(Acertadas);
         Acertadas.Clear();
     }
-
-
 }
