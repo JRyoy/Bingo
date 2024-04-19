@@ -22,3 +22,11 @@ C:\Users\Lab15-PC01\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\Varios.dll
 C:\Users\Lab15-PC01\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\refint\Varios.dll
 C:\Users\Lab15-PC01\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\Varios.pdb
 C:\Users\Lab15-PC01\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\ref\Varios.dll
+c:\Users\Josbert\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\Varios.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Josbert\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\Varios.AssemblyInfoInputs.cache
+c:\Users\Josbert\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\Varios.AssemblyInfo.cs
+c:\Users\Josbert\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\Varios.csproj.CoreCompileInputs.cache
+c:\Users\Josbert\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\Varios.sourcelink.json
+c:\Users\Josbert\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\Varios.dll
+c:\Users\Josbert\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\refint\Varios.dll
+c:\Users\Josbert\Documents\GitHub\Bingo\Varios\obj\Debug\net8.0\Varios.pdb

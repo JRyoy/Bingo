@@ -108,3 +108,6 @@ c:\Users\Lab15-PC01\Documents\GitHub\Bingo\TestBolillero\obj\Debug\net8.0\refint
 c:\Users\Lab15-PC01\Documents\GitHub\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.pdb
 c:\Users\Lab15-PC01\Documents\GitHub\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.genruntimeconfig.cache
 c:\Users\Lab15-PC01\Documents\GitHub\Bingo\TestBolillero\obj\Debug\net8.0\ref\TestBolillero.dll
+c:\Users\Josbert\Documents\GitHub\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.dll
+c:\Users\Josbert\Documents\GitHub\Bingo\TestBolillero\obj\Debug\net8.0\refint\TestBolillero.dll
+c:\Users\Josbert\Documents\GitHub\Bingo\TestBolillero\obj\Debug\net8.0\TestBolillero.pdb
