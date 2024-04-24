@@ -14,7 +14,7 @@ public class Simular
             Bolillero Clon=bolillero.Clon(bolillero);
 
                 tareas[0] = Task.Run(()=> Clon.JugadaNV(cantidadHilo+res,bolillas));
-                tareas[1] = Task.Run(() => Clon.JugadaNV(cantidadHilo,bolillas));
+                tareas[i] = Task.Run(() => Clon.JugadaNV(cantidadHilo,bolillas));
         }
             Task.WaitAll(tareas);
             return tareas.Sum(t => t.Result);
