@@ -2,15 +2,11 @@ namespace Varios;
 
 public class Simular
 {
-    public long simularSinHilos(Bolillero bolillero, int CantidadSimulacion, List<int> bolillas)
+    public long SimularSinHilos(Bolillero bolillero, int CantidadSimulacion, List<int> bolillas)
         => bolillero.JugadaNV(CantidadSimulacion, bolillas);
-    public long simularConHilos(Bolillero bolillero, int CantidadSimulacion,List<int> bolillas,long hilos)
+    public long SimularConHilos(Bolillero bolillero, int CantidadSimulacion,List<int> bolillas,long hilos)
     {
-        Task<long>[] tareas = new Task<long>[hilos];
-        long cantidadHilo=CantidadSimulacion/hilos;
-        long res=CantidadSimulacion%hilos;
-        for(long i=0 ;i<hilos; i++)
-        {
+
         Bolillero bolillero1 = bolillero.Clon(bolillero);
         Task<long>[] tareas = new Task<long>[hilos];
         long resto = CantidadSimulacion%hilos;
@@ -26,6 +22,10 @@ public class Simular
         Task.WaitAll(tareas);
         return tareas.Sum(t => t.Result); 
         }
+    public async Task SimularConHilosAsync(Bolillero bolillero, int CantidadSimulacion,List<int> bolillas,long hilos)
+    {
+
+    }
 }
 
 
