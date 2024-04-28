@@ -11,13 +11,20 @@ public class Simular
         long res=CantidadSimulacion%hilos;
         for(long i=0 ;i<hilos; i++)
         {
-            Bolillero Clon=bolillero.Clon(bolillero);
-
-                tareas[0] = Task.Run(()=> Clon.JugadaNV(cantidadHilo+res,bolillas));
-                tareas[i] = Task.Run(() => Clon.JugadaNV(cantidadHilo,bolillas));
+        Bolillero bolillero1 = bolillero.Clon(bolillero);
+        Task<long>[] tareas = new Task<long>[hilos];
+        long resto = CantidadSimulacion%hilos;
+        for (long i = 0; i < resto; i++)
+        {
+            tareas[i] = Task.Run(() => bolillero1.JugadaNV(CantidadSimulacion / hilos, bolillas));
         }
-            Task.WaitAll(tareas);
-            return tareas.Sum(t => t.Result);
+        for (long i = resto; i < hilos; i++)
+        {
+            tareas[i] = Task.Run(() => bolillero1.JugadaNV(CantidadSimulacion / hilos, bolillas));
+        }
+
+        Task.WaitAll(tareas);
+        return tareas.Sum(t => t.Result); 
         }
 }
 
