@@ -24,7 +24,15 @@ public class Simular
         }
     public async Task SimularConHilosAsync(Bolillero bolillero, int CantidadSimulacion,List<int> bolillas,long hilos)
     {
+        Task<long>[] tareas = new Task<long>[hilos];
+        long resto = CantidadSimulacion % hilos;
+        for (long i = 0; i < resto; i++)
+            tareas[i] = GenerarTask(bolillero, bolillas,CantidadSimulacion / hilos + 1);
+        for (long i = resto; i < hilos; i++)
+            tareas[i] = GenerarTask(bolillero, bolillas,CantidadSimulacion / hilos);
 
+        await Task.WhenAll(tareas);
+        return tareas.Sum(t => t.Result);
     }
 }
 
