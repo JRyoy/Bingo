@@ -13,8 +13,8 @@ public class Bolillero
     //Para clonar
     public Bolillero Clon(Bolillero original)
     {
-        this.Acertadas = new(original.Acertadas);
         this.bolillas=new(original.bolillas);
+        this.Acertadas = new(original.Acertadas);
         return original;
     }
     public int SacarBolilla()

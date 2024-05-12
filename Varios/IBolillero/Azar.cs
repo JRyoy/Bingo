@@ -1,8 +1,8 @@
 namespace Varios.IBolillero;
 
-public class Azar
+public class Azar:Iazar
 {
-    public int SacarBolilla(Bolillero bolillero)
+    public int ObtenerIndice(Bolillero bolillero)
     {
         Random random= new (DateTime.Now.Millisecond);
         return random.Next(bolillero.bolillas.Count);
