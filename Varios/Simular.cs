@@ -7,7 +7,7 @@ public class Simular
     public long SimularConHilos(Bolillero bolillero, int CantidadSimulacion,List<int> bolillas,long hilos)
     {
 
-        Bolillero bolillero1 = bolillero.Clon(bolillero);
+       var bolillero1 = bolillero.Clon(bolillero);
         Task<long>[] tareas = new Task<long>[hilos];
         long resto = CantidadSimulacion%hilos;
         for (long i = 0; i < resto; i++)
@@ -23,7 +23,7 @@ public class Simular
         return tareas.Sum(t => t.Result); 
 
         }
-    public async Task SimularConHilosAsync(Bolillero bolillero, int CantidadSimulacion,List<int> bolillas,long hilos)
+    public async Task<long> SimularConHilosAsync(Bolillero bolillero, int CantidadSimulacion,List<int> bolillas,long hilos)
     {
         Task<long>[] tareas = new Task<long>[hilos];
         long resto = CantidadSimulacion % hilos;
@@ -35,9 +35,10 @@ public class Simular
         await Task.WhenAll(tareas);
         return tareas.Sum(t => t.Result);
     }
-    public async Task GenerarTask(Bolillero bolillero, List<int> bolillas,long CantidadSimulacion)
+    private static Task<long> GenerarTask(Bolillero bolillero, List<int> bolillas,long CantidadSimulacion)
     {
-        
+        var bolilleroClon = bolillero.Clon(bolillero);
+        return Task.Run(()=>bolilleroClon.JugadaNV(CantidadSimulacion,bolillas));
     }
 }
 
